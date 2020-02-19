@@ -5,18 +5,18 @@ realizaCompra() que não deve permitir uma compra caso o limite tenha sido atingi
 imprimeFatura() que imprime na tela o valor da fatura.*/
 
 public class CartaoDeCredito {
-	private int limite;
+	private double  limite;
 	private int saldoDaFatura;
 	private String nomeDoCliente;
 
-	CartaoDeCredito(int limite, String nomeDoCliente) {
+	CartaoDeCredito(double limite, String nomeDoCliente) {
 		this.limite = limite;
 		this.saldoDaFatura = 0;
 		this.nomeDoCliente = nomeDoCliente;
 	}
 
-	public void relizarCompra(int limit, int valorDaCompra) {
-		if (valorDaCompra <= limit) {
+	public void relizarCompra(int valorDaCompra) {
+		if (valorDaCompra <=  limite) {
 			System.out.println("Compra Realizada com successo ");
 			this.limite = limite - valorDaCompra;
 			this.saldoDaFatura += valorDaCompra;

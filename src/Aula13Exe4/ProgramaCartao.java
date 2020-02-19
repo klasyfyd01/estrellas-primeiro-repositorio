@@ -11,6 +11,7 @@ public class ProgramaCartao {
 		cartao.getLimite();
 		cartao.aumentaLimite(7000);
 		cartao.diminuirLimite(4000);
+		cartao.relizarCompra(230);
 		System.out.println("O seu limite e "+cartao.getLimite());
 	}
 		
